@@ -1,11 +1,11 @@
 version: 0.2
 env:
   variables:
-    APP_NAME: "angular-cicd-pipeline-demo"
+    APP_NAME: "dist/todo-list-app"
 phases:
   install:
     runtime-versions:
-      nodejs: 14.x
+      nodejs: 18.x
     commands:
       - echo install process started
       - npm install && npm install -g @angular/cli
